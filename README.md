@@ -24,6 +24,23 @@ Then sync it and download all the videos with
     
 youtube-dl handles if you need to download a video or not and supports download resuming.
 
+## Para a playlist da Prefeitura de Rio do Sul
+
+Clonar este repositório.
+
+Criar a pasta e inicializar a playlist:
+
+    mkdir prefeitura
+    yps.py --init https://www.youtube.com/playlist?list=PLEhhZDKMxiMjHJxV6QEIoX9Z_GRu6Bw51 --dir prefeitura
+
+Sincronizar e baixar os vídeos
+
+    yps.py --sync prefeitura
+    
+O utilitário youtube-dl gerencia toda a parte de download dos vídeos.
+
+
+
 ## License
 
 MIT all the way!
