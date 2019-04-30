@@ -36,9 +36,17 @@ Criar a pasta e inicializar a playlist:
 Sincronizar e baixar os vídeos
 
     yps.py --sync prefeitura
-    
-O utilitário youtube-dl gerencia toda a parte de download dos vídeos.
 
+Adicionar no crontab do usuário root o seguinte comando:
+
+    00 03 * * * /home/<usuario>/youtube-playlist-sync/atualizar_playlist.sh > /home/<usuario>/youtube-playlist-sync/atualizar_playlist.log
+
+* Lembre de trocar `<usuario>` pela pasta do usuário onde o repositório foi clonado.
+
+Desta forma, os vídeos serão obtidos diariamente, às 03:00h.
+
+O caminho do arquivo gerado e demais itens também poderão ser personalizados.
+O utilitário youtube-dl gerencia toda a parte de download dos vídeos.
 
 
 ## License
