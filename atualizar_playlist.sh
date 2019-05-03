@@ -4,7 +4,6 @@ cd /home/almir/youtube-playlist-sync/
 rm prefeitura/*.webm
 python yps.py --sync prefeitura
 cd prefeitura
-rm tv.webm
 printf "file '%s'\n" ./*.webm > videos.txt
 ffmpeg -safe 0 -f concat -i videos.txt -c copy tv.webm
 
