@@ -1,6 +1,7 @@
 #!/bin/bash
 
 cd /home/almir/youtube-playlist-sync/
+rm prefeitura/*.webm
 python yps.py --sync prefeitura
 cd prefeitura
 rm tv.webm
